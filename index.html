@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio Project</title>
+</head>
+<body>
+  <!-- .......Header and Nav......... -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <!-- make a logo image -->
+        <img src="img/Logo-removebg-preview.png" class="logo">
+        <ul id="sidemenu">
+          <!-- Add icons -->
+          <!-- <ion-icon name="home-outline"></ion-icon><br> -->
+          <!-- <ion-icon name="logo-linkedin"></ion-icon><br> -->
+          <!-- <ion-icon name="logo-github"></ion-icon><br> -->
+          <!-- <ion-icon name="document-outline"></ion-icon><br> -->
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="www.linkedin.com/in/sean-sinclair-3139a4156">LinkedIn</a></li>
+          <li><a href="https://github.com/1seans?tab=repositories">GitHub</a></li>
+          <!-- fix resume -->
+          <li><a href="">Resume</a></li>
+          
+         <ion-icon name="close-outline" onclick="closemenu()"></ion-icon>
+        </ul>
+        
+        <ion-icon name="menu-outline" onclick="openmenu()"></ion-icon>
+
+      </nav>
+
+      <div class=" header-text">
+        <p>Full Stack Developer</p>
+        <h1>Hello, I'm <span>Sean</span> and I'm a student at MIT studying full stack development with <span>MERN</span>. I'm seeking opportunities as a full stack or front end developer.</h1>
+      </div>
+    </div>
+  </div>
+  <!-- .........About section........... -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+       <div class="about-col-1">
+        <!-- Add image/profile pic -->
+        <img src="img/LinkedIn Profile Picture.png" alt="">
+       </div>
+       <div class="about-col-2">
+         <h1 class="sub-title">About Me</h1>
+         <p>I am a software developer based in New York with a strong educational background in sports science and exercise science. I received my Bachelor's degree in sports science and my Master's degree in exercise science from Long Island University, where I also competed for 4 years on the Division 1 track and field team. I am currently enrolled in MIT's full stack coding bootcamp, where I am learning the MERN stack and expanding my skillset as a developer. I have a passion for technology and believe that my ability to teach and communicate complex concepts effectively translates well to the field of software development. In my free time, I enjoy staying active and participating in sports, and I am always looking for ways to improve and grow both personally and professionally.</p>
+
+         <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <!-- <p class="tab-links"  onclick="opentab('experience')">Projects</p> -->
+          <p class="tab-links"  onclick="opentab('education')">Experience</p>
+         </div>
+
+         <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>JavaScript</span>
+                <!-- <br>What do you use js to do</li> -->
+              <li><span>React</span>
+                <!-- <br>......</li> -->
+              <li><span>CSS</span>
+                <!-- <br>.......</li> -->
+              <li><span>HTML</span>
+                <!-- <br>......</li> -->
+            </ul>
+          </div>
+          <!-- <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Experience name</span><br>Discription</li>
+              <li><span>......</span><br>......</li>
+              <li><span>......</span><br>......</li>
+              <li><span>......</span><br>......</li>
+            </ul>
+         </div> -->
+         <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022-2023</span><br>MIT xPRO, Professional Certificate in Coding: Full Stack Development with MERN	</li>
+              <li><span>2018-2019</span><br>Long Island University, Masters of Science</li>
+              <li><span>2016-2018</span><br>Long Island University, Bachelor of Science</li>
+            </ul>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ....................Projecects.................... -->
+  <div id="project">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="img/Pac.man.png" alt="">
+          <div class="layer">
+            <h3>PacMen Factory</h3>
+            <p>A Pac-Man game in which multiple characters move around a page and bounce off the edges. It generates the characters with random positions and velocities and uses an update function to move them.</p>
+            <a href="https://github.com/1seans/PacMen-Factory"><ion-icon name="paper-plane-outline"></ion-icon></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="img/Eyes.png" alt="">
+          <div class="layer">
+            <h3>Eye Movement<br>Mouse Movement</h3>
+            <p>JavaScript function that moves two elements on a web page when the mouse is moved, causing the elements to follow the mouse cursor.</p>
+            <a href="https://github.com/1seans/Eye-Movement-Mouse-Movement"><ion-icon name="paper-plane-outline"></ion-icon></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="img/Map.png" alt="">
+          <div class="layer">
+            <h3>Time Bus<br> Tracking and Mapping</h3>
+            <p>Using the Mapbox GL JS library to create a map and move a marker along a predetermined route represented by a list of coordinates. A function is defined to update the marker's position every second by setting its coordinates to the next set of coordinates in the route.</p>
+            <a href="https://github.com/1seans/Time-Bus-Tracking-and-Mapping"><ion-icon name="paper-plane-outline"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/1seans?tab=repositories" class="btn">See More</a>
+    </div>
+  </div>
+<!------------contact----------------->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p> <a href="mailto:seansinclair83@gmail.com"><ion-icon name="mail-outline"></ion-icon></a> Seansinclair83@gmail.com</p>
+        <p><a href=" tel:+3477857894"><ion-icon name="call-outline"></ion-icon></a> 347-785-7894</p>
+        <!-- resume link go here -->
+        <a href="img/resume" download class="btn btn2">Download Resume<ion-icon name="cloud-download-outline"></ion-icon></a>
+      </div>
+
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+  <p> © 2022 Sean Sinclair </p>
+  </div>
+</div>
+
+
+  <script  src="./project.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+ 
+</body>
+</html>
