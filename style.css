@@ -246,6 +246,10 @@ margin: 10px 0;
   font-size: 14px;
 }
 
+.tab-contents ul li a{
+  text-decoration: none;
+}
+
 .tab-contents{
   display: none;
 }
