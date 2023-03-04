@@ -12,22 +12,16 @@
   <div id="header">
     <div class="container">
       <nav>
-        <!-- make a logo image -->
         <img src="img/Logo-removebg-preview.png" class="logo">
         <ul id="sidemenu">
-          <!-- Add icons -->
-          <!-- <ion-icon name="home-outline"></ion-icon><br> -->
-          <!-- <ion-icon name="logo-linkedin"></ion-icon><br> -->
-          <!-- <ion-icon name="logo-github"></ion-icon><br> -->
-          <!-- <ion-icon name="document-outline"></ion-icon><br> -->
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About Me</a></li>
           <li><a href="#project">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="www.linkedin.com/in/sean-sinclair-3139a4156">LinkedIn</a></li>
+          <li><a href="http://www.linkedin.com/in/sean-m-sinclair">LinkedIn</a></li>
           <li><a href="https://github.com/1seans?tab=repositories">GitHub</a></li>
           <!-- fix resume -->
-          <li><a href="">Resume</a></li>
+          <li><a href="#resume">Resume</a></li>
           
          <ion-icon name="close-outline" onclick="closemenu()"></ion-icon>
         </ul>
@@ -38,7 +32,7 @@
 
       <div class=" header-text">
         <p>Full Stack Developer</p>
-        <h1>Hello, I'm <span>Sean</span> and I'm a student at MIT studying full stack development with <span>MERN</span>. I'm seeking opportunities as a full stack or front end developer.</h1>
+        <h1>Hello, I'm <span>Sean</span> and I'm a student in MIT Professional Certificate in Coding: Full Stack Development with <span>MERN</span> Coding Bootcamp. I'm seeking opportunities as a full stack or front end developer.</h1>
       </div>
     </div>
   </div>
@@ -47,8 +41,7 @@
     <div class="container">
       <div class="row">
        <div class="about-col-1">
-        <!-- Add image/profile pic -->
-        <img src="img/LinkedIn Profile Picture.png" alt="">
+        <img src="img/LinkedIn Profile Picture.png" alt="Profile Picture">
        </div>
        <div class="about-col-2">
          <h1 class="sub-title">About Me</h1>
@@ -56,37 +49,43 @@
 
          <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <!-- <p class="tab-links"  onclick="opentab('experience')">Projects</p> -->
+          <p class="tab-links"  onclick="opentab('experience')">Projects</p>
           <p class="tab-links"  onclick="opentab('education')">Experience</p>
+          <p class="tab-links"  onclick="opentab('certification')">Certificate</p>
          </div>
 
          <div class="tab-contents active-tab" id="skills">
-            <ul>
+            <ul> 
               <li><span>JavaScript</span>
-                <!-- <br>What do you use js to do</li> -->
-              <li><span>React</span>
-                <!-- <br>......</li> -->
-              <li><span>CSS</span>
-                <!-- <br>.......</li> -->
               <li><span>HTML</span>
-                <!-- <br>......</li> -->
+              <li><span>CSS</span>
+              <li><span>MERN Stack (MongoDB, ExpressJS, React, NodeJS)</span> 
+              <li><span>Airbnb Style Guide for JavaScript</span> 
+              <li><span>Cloud</span> 
             </ul>
           </div>
-          <!-- <div class="tab-contents" id="experience">
+          <div class="tab-contents" id="certification">
             <ul>
-              <li><span>Experience name</span><br>Discription</li>
-              <li><span>......</span><br>......</li>
-              <li><span>......</span><br>......</li>
-              <li><span>......</span><br>......</li>
+              <li>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20Nordics/PxenP4rHNE6Bh4nQz_Accenture%20Nordics_Lyv2WQ8qDQaQBzqBX_1674008950220_completion_certificate.pdf"><span>Accenture Nordics Developer Virtual Experience Program with Forage</span></a>
+                <br>Tasks Completed include:
+                <br>Architecture, Programming, Testing, Security, Artificial Intelligence
+              </li>
+              <li>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/XvvYRvb2YpfkyA52H_Accenture%20North%20America_Lyv2WQ8qDQaQBzqBX_1674276849471_completion_certificate.pdf"><span>Accenture North America coding: Development & Advance Engineering Virtual Experience Program with Forage</span></a>
+                <br>Tasks Completed include:
+                <br>Object Oriented Programming, Code Refraction, Continues Integration, Agile Planning
+              </li>
             </ul>
-         </div> -->
+         </div>
          <div class="tab-contents" id="education">
             <ul>
               <li><span>2022-2023</span><br>MIT xPRO, Professional Certificate in Coding: Full Stack Development with MERN	</li>
-              <li><span>2018-2019</span><br>Long Island University, Masters of Science</li>
-              <li><span>2016-2018</span><br>Long Island University, Bachelor of Science</li>
+              <li><span>2018-2019</span><br>Long Island University, Masters of Science in Exercise Science </li>
+              <li><span>2016-2018</span><br>Long Island University, Bachelor of Science in Sports Science</li>
             </ul>
          </div>
+         
         </div>
       </div>
     </div>
@@ -97,15 +96,15 @@
       <h1 class="sub-title">My Work</h1>
       <div class="project-list">
         <div class="project">
-          <img src="img/Pac.man.png" alt="">
+          <img src="img/calculator.png" alt="project image">
           <div class="layer">
             <h3>PacMen Factory</h3>
-            <p>A Pac-Man game in which multiple characters move around a page and bounce off the edges. It generates the characters with random positions and velocities and uses an update function to move them.</p>
-            <a href="https://github.com/1seans/PacMen-Factory"><ion-icon name="paper-plane-outline"></ion-icon></a>
+            <p>This is a simple calculator app built using React and usesReducer hook. The app consists of two components DigitButton and OperationButton. The app also has a reducer function that manages the state of the application and a dispatch function to update the state.</p>
+            <a href="https://github.com/1seans/Calculator"><ion-icon name="paper-plane-outline"></ion-icon></a>
           </div>
         </div>
         <div class="project">
-          <img src="img/Eyes.png" alt="">
+          <img src="img/Eyes.png" alt="project image">
           <div class="layer">
             <h3>Eye Movement<br>Mouse Movement</h3>
             <p>JavaScript function that moves two elements on a web page when the mouse is moved, causing the elements to follow the mouse cursor.</p>
@@ -113,7 +112,7 @@
           </div>
         </div>
         <div class="project">
-          <img src="img/Map.png" alt="">
+          <img src="img/Map.png" alt="project image">
           <div class="layer">
             <h3>Time Bus<br> Tracking and Mapping</h3>
             <p>Using the Mapbox GL JS library to create a map and move a marker along a predetermined route represented by a list of coordinates. A function is defined to update the marker's position every second by setting its coordinates to the next set of coordinates in the route.</p>
@@ -134,7 +133,7 @@
         <p> <a href="mailto:seansinclair83@gmail.com"><ion-icon name="mail-outline"></ion-icon></a> Seansinclair83@gmail.com</p>
         <p><a href=" tel:+3477857894"><ion-icon name="call-outline"></ion-icon></a> 347-785-7894</p>
         <!-- resume link go here -->
-        <a href="img/resume" download class="btn btn2">Download Resume<ion-icon name="cloud-download-outline"></ion-icon></a>
+        <a id="resume" href="Full Stack Resume.pdf" download class="btn btn2">Download Resume<ion-icon name="cloud-download-outline"></ion-icon></a>
       </div>
 
       <div class="contact-right">
